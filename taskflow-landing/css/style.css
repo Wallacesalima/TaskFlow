@@ -19,6 +19,7 @@ nav {
 a {
     text-decoration: none;
     color: var(--cor-primaria);
+    font-size: 1.2rem;
 }
 
 ul {
@@ -107,6 +108,7 @@ p {
     transform: translateY(-4px);
     transition: 0.3s ease;
 }
+
 #pricing {
     display: grid;
     place-items: center;
@@ -125,7 +127,7 @@ p {
 }
 
 .effect-glass {
-     /* From https://css.glass */
+    /* From https://css.glass */
     background: rgba(240, 238, 233, 0.44);
     border-radius: 1rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -161,6 +163,106 @@ p {
     opacity: 0.8;
 }
 
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem 0 0 0;
+    border-radius: 0;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.description-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.description-taskflow {
+    grid-column: 1 / 4;
+    padding: 0 1.5rem;
+    align-self: start;
+
+}
+
+.title-footer-logo {
+    align-self: end;
+    margin: 0;
+}
+
+.logo-taskflow-footer {
+    width: 2.5rem;
+    display: grid;
+    grid-auto-flow: row;
+    justify-self: end;
+    align-self: end;
+}
+
+.footer img {
+    width: 2rem;
+}
+
+.speed-links {
+    padding: 1rem 3rem;
+}
+
+.ul-plan-and-footer {
+    gap: 1.5rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem 3rem;
+}
+
+.title-footer-contact {
+    grid-column: 1 / 4;
+    grid-row: 1/1;
+}
+
+.email-phone {
+    grid-column: 4 / 2;
+    grid-row: 2 /4;
+    gap: 0;
+}
+
+.email {
+    grid-column: 1 / 4;
+    grid-row: 2 /4;
+}
+
+.phone {
+    grid-column: 1/4;
+    grid-row: 3 / 4;
+}
+
+.other-logos {
+    display: flex;
+    justify-content: end;
+    grid-column: 3 / 4;
+    gap: 0.5rem;
+}
+
+.other-logos img {
+    width: 2rem;
+}
+
+.icons {
+    color: #fff;
+    background: var(--cor-primaria);
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
 
 
 
@@ -208,11 +310,14 @@ p {
         font-size: 2rem;
     }
 
+    .h1-section {
+        font-size: 2rem;
+    }
+
     .features {
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
-
     }
 
     .feature-card {
@@ -222,5 +327,24 @@ p {
 
     .plan-container {
         grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .description-footer {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
     }
 }

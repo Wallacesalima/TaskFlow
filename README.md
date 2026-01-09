@@ -1,58 +1,55 @@
-TaskFlow
+# TaskFlow
 
-Landing page responsiva para um aplicativo fictício de gestão de tarefas, desenvolvida com foco em clareza visual, responsividade e boas práticas de front-end.
+Landing page responsiva para um aplicativo fictício de gestão de tarefas, desenvolvida com foco em boas práticas de front-end, responsividade e clareza visual.
 
-🔗 Demo: https://task-flow-amber-seven.vercel.app
+🔗 **Demo:** https://task-flow-amber-seven.vercel.app  
+💻 **Código:** https://github.com/Wallacesalima/TaskFlow
 
-📌 Sobre o projeto
+---
 
-O TaskFlow simula a apresentação de um aplicativo de produtividade, destacando funcionalidades, planos e benefícios de forma simples e objetiva.
+## Sobre o projeto
 
-O projeto foi pensado mobile-first, garantindo boa experiência tanto em dispositivos móveis quanto em desktop.
+O TaskFlow é uma landing page que simula a apresentação de um aplicativo de produtividade, destacando funcionalidades, planos e benefícios de forma clara e objetiva.
 
-🛠️ Tecnologias utilizadas
+O projeto foi pensado com abordagem **mobile-first**, garantindo boa experiência tanto em dispositivos móveis quanto em desktop.
 
-HTML5 — estrutura semântica
+---
 
-CSS3
+## Tecnologias utilizadas
 
-Flexbox
+- HTML5 (estrutura semântica)
+- CSS3
+  - Flexbox
+  - Grid Layout
+  - Variáveis CSS
+  - Media Queries
+- JavaScript (Vanilla)
+- Deploy com Vercel
 
-Grid Layout
+---
 
-Variáveis CSS
+## Funcionalidades
 
-Media queries
+- Layout totalmente responsivo
+- Navegação com scroll suave
+- Seção de planos com interação via JavaScript
+- Testemunhos fictícios para simulação de uso real
+- Design moderno com efeito glassmorphism
 
-JavaScript (Vanilla) — interações simples
+---
 
-Vercel — deploy
+## Responsividade
 
-✨ Funcionalidades
+O layout se adapta automaticamente para diferentes tamanhos de tela:
 
-Layout totalmente responsivo
+- Desktop
+- Tablet
+- Mobile
 
-Seção de planos com seleção visual via JavaScript
+---
 
-Scroll suave entre seções
+## Como rodar o projeto localmente
 
-Testemunhos fictícios para simular uso real
-
-Design limpo com efeito glassmorphism
-
-📱 Responsividade
-
-O layout se adapta automaticamente para:
-
-Desktop
-
-Tablet
-
-Mobile
-
-🚀 Como rodar o projeto localmente
+```bash
 git clone https://github.com/Wallacesalima/TaskFlow.git
 cd TaskFlow
-
-
-Depois, basta abrir o arquivo index.html no navegador.

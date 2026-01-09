@@ -203,6 +203,68 @@ h3 {
     transition: 0.3s ease;
 }
 
+#testimonials {
+    justify-items: center;
+    align-content: center;
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+.testimonials-container {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    gap: 5rem;
+    margin: 10rem 3rem;
+
+}
+
+.testimonials-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 20rem;
+    max-height: 20rem;
+    max-width: 20rem;
+}
+
+.testimonials-card:hover {
+    transform: translateY(-4px)
+}
+
+.testimonials-card h3 {
+    color: var(--cor-terciaria);
+    margin: 0;
+}
+
+.testimonials-card h4 {
+    color: var(--cor-primaria);
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+.testimonials-card p {
+    color: var(--cor-terciaria);
+    padding: 0 2rem;
+    font-style: italic
+}
+
+
+.avatar {
+    background-color: var(--cor-primaria);
+    padding: 0.8rem 1.2rem;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+}
+
 #pricing {
     display: grid;
     place-items: center;
@@ -369,7 +431,9 @@ h3 {
 @media screen and (max-width: 1300px) {
 
     .footer-container,
-    .plan-container {
+    .plan-container,
+    .testimonials-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -452,6 +516,12 @@ h3 {
     .feature-card {
         width: 100%;
         gap: 0;
+    }
+
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
     }
 
     .plan-container {

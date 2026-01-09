@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 })
+
+const avatars = document.querySelectorAll('.avatar')
+
+avatars.forEach(avatar => {
+  const name = avatar.nextElementSibling.textContent
+  avatar.textContent = name.charAt(0)
+})
